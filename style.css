@@ -1,0 +1,53 @@
+/* MOBILE NAVBAR FIX */
+/*@media (max-width: 768px) {
+
+  /* hamburger visible 
+  #hamburgerBtn {
+    display: inline-block !important;
+  }
+
+  /* dropdown menu 
+  #menuWrap {
+    display: none;
+    position: absolute;
+    top: 70px;  below navbar 
+    left: 0;
+    right: 0;
+    background: white;    ✅ clean white background 
+    margin-left: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 999;
+  }
+
+  show when clicked 
+  #menuWrap.active {
+    display: block;
+  }
+
+   vertical list 
+  #menuList {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+   menu text style 
+  #menuList li {
+    font-size: 12px;      normal readable size 
+    color: black;
+    padding: 2px 0;
+  }
+}
+
+  @media (max-width: 768px) {
+  img[style*="position: absolute"] {
+    position: static !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    display: block;
+  }
+}*/
+
+
+
+
+

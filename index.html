@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>task3</title>
+    <style>
+        /* MOBILE NAVBAR FIX */
+        @media (max-width: 768px) {
+
+            /* hamburger visible */
+            #hamburgerBtn {
+                display: inline-block !important;
+            }
+
+            /* dropdown menu */
+            #menuWrap {
+                display: none;
+                position: absolute;
+                top: 70px;
+                /* below navbar */
+                left: 0;
+                right: 0;
+                background: white;
+                /* ✅ clean white background */
+                margin-left: 250px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                z-index: 999;
+            }
+
+            /* show when clicked */
+            #menuWrap.active {
+                display: block;
+            }
+
+            /* vertical list */
+            #menuList {
+                flex-direction: column !important;
+                gap: 15px !important;
+            }
+
+            /* menu text style */
+            #menuList li {
+                font-size: 12px;
+                /* normal readable size */
+                color: black;
+                padding: 2px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            img[style*="position: absolute"] {
+                position: static !important;
+                width: 100% !important;
+                margin: 20px 0 !important;
+                display: block;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <div style="background-color: aquamarine;">
+        <div
+            style="width: 80%; margin: auto; height: 70px; display: flex; justify-content: space-between; align-items: center; position: relative;">
+
+            <div>logo</div>
+
+
+            <div id="menuWrap">
+                <ul id="menuList"
+                    style="display: flex; list-style: none; gap:50px; justify-content: space-between; margin:0; padding:0; text-decoration: none;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contactus">Contactus</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:1px;">
+                <button id="hamburgerBtn" aria-label="Open menu"
+                    style="display:none; border:none; border-radius:5px; width:40px; height:36px; background:black; cursor:pointer; padding:8px;">
+                    <span style="display:block; height:2px; background:white; margin:4px 0;"></span>
+                    <span style="display:block; height:2px; background:white; margin:4px 0;"></span>
+                    <span style="display:block; height:2px; background:white; margin:4px 0;"></span>
+                </button>
+
+                <button
+                    style="border: none; border-radius: 5px; padding: 6px 12px; width: 70px; background-color: black; color: white; font-size: 20px;">
+                    login
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div
+            style="background-color: orange; margin: auto; margin-left: 20px; margin-right: 20px; margin-top: 30px; width: 50%; font-family: 'Courier New', Courier, monospace; font-size: 15px;">
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae molestiae,</br>
+                qui voluptate voluptatem itaque maxime unde neque magnam, assumenda </br>
+                corporis officiis ipsa enim. Nam iusto officia maiores animi nisi? Reiciendis</br>
+                rerum perspiciatis quidem officiis.</br>
+            </p>
+        </div>
+
+        <div
+            style="background-color: blue; margin: auto; margin-left: 20px; margin-right: 30px; margin-top: 20px; width: 60%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 10px;">
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae molestiae,</br>
+                qui voluptate voluptatem itaque maxime unde neque magnam, assumenda </br>
+                corporis officiis ipsa enim. Nam iusto officia maiores animi nisi? Reiciendis</br>
+                rerum perspiciatis quidem officiis.</br>
+            </p>
+        </div>
+
+
+        <div
+            style="background-color: yellow; margin: auto; margin-left: 20px; margin-right: 30px; margin-top: 20px; width: 70%;font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;">
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae molestiae,</br>
+                qui voluptate voluptatem itaque maxime unde neque magnam, assumenda </br>
+                corporis officiis ipsa enim. Nam iusto officia maiores animi nisi? Reiciendis</br>
+                rerum perspiciatis quidem officiis.</br>
+            </p>
+        </div>
+
+        <div
+            style="background-color: red; margin: auto; margin-left: 20px; margin-right: 30px; margin-top: 20px; width: 80%;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 10px;">
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae molestiae,</br>
+                qui voluptate voluptatem itaque maxime unde neque magnam, assumenda </br>
+                corporis officiis ipsa enim. Nam iusto officia maiores animi nisi? Reiciendis</br>
+                rerum perspiciatis quidem officiis.</br>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <img src="pexels-vikashkr50-19566206.jpg"
+            style="width: 20%; margin-left: 1000px; position: absolute; top: 200px; right: 30px;">
+    </div>
+
+
+
+    <table
+        style="width: 80%; height: auto; border-collapse: collapse; border: 2px solid red; box-sizing: border-box; margin-top:50px;">
+        <thead>
+            <tr style="background-color: blueviolet;">
+                <th>Name</th>
+                <th>age</th>
+                <th>country</th>
+                <th>date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Smith</td>
+                <td>28</td>
+                <td>New York</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Emma Johnson</td>
+                <td>32</td>
+                <td>London</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>45</td>
+                <td>Chicago</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>Sophia Davis</td>
+                <td>29</td>
+                <td>Toronto</td>
+                <td>Engineer</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <div style="background-color: black;">
+        <h1
+            style="margin-top: 60px; height: auto; color: rgba(23, 20, 20, 0.475); font-size: 50px; text-align: center; font-family: monospace;">
+            THIS IS THIRD SECTION
+            OF
+            MY PAGE</h1>
+        <h1
+            style="margin-top: 20px; height: auto; color: white; font-size: 50px; text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            This is some paragraph</h1>
+        <p
+            style="margin-top: 20px; height: auto; color: rgba(55, 70, 68, 0.475); font-size: 20px; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Introductory Paragraph of a Play Review :
+            Recently, I had the pleasure of seeing one of William Shakespeare's most beloved comedies, A Midsummer
+            Night's
+            Dream, </br>
+            performed beautifully at the Los Angeles Repertory Theatre in downtown Los Angeles. At first glance, this
+            </br>
+            performance space looks more like an industrial warehouse than an art house, but walking in you are
+            transformed
+            to the magical land of Midsummer.
+            How to Write a Paragraph
+            wikihow</p>
+
+    </div>
+
+
+    <div style="margin-top: 50px;">
+        <div style="box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 20px 20px;
+    font-size: 20px;
+    color: aqua;
+    box-shadow: 0 4px 10px rgba(34, 1, 7, 0.3);
+    text-shadow: 2px 2px 5px rgba(156, 120, 12, 0.5);">
+            <h1>This is another heading</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quo cupiditate incidunt.</br>
+                performance space looks more like an industrial warehouse than an art house, but walking in you are
+                transformed</p>
+        </div>
+
+        <div style="box-sizing: border-box;
+    border: 2px solid rgba(60, 176, 160, 0.461);
+    border-radius: 15px;
+    margin: 20px 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(34, 1, 7, 0.3);
+    text-shadow: 2px 2px 5px rgba(156, 120, 12, 0.5);">
+            <h1>This is another heading</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quo cupiditate incidunt.</br>
+                performance space looks more like an industrial warehouse than an art house, but walking in you are
+                transformed</p>
+        </div>
+
+        <div style="box-sizing: border-box;
+    border: 2px solid rgb(171, 84, 150);
+    border-radius: 20px;
+    margin: 20px 20px;
+    font-size: 20px;
+    color: rgb(93, 22, 87);
+    box-shadow: 0 4px 10px rgba(34, 1, 7, 0.3);
+    text-shadow: 2px 2px 5px rgba(156, 120, 12, 0.5);">
+            <h1>This is another heading</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quo cupiditate incidunt.</br>
+                performance space looks more like an industrial warehouse than an art house, but walking in you are
+                transformed</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const menuWrap = document.getElementById("menuWrap");
+
+        hamburgerBtn.addEventListener("click", () => {
+            menuWrap.classList.toggle("active");
+        });
+
+    </script>
+
+
+
+
+</body>
+
+
+
+
+</html>
